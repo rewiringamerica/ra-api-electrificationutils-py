@@ -29,8 +29,8 @@ class EnergyTradeoff(BaseModel):
     """ # noqa: E501
     usage_level_tag: StrictStr
     time_period: Optional[StrictStr] = 'annual'
-    changes: List[EnergyQuantity]
-    __properties: ClassVar[List[str]] = ["usage_level_tag", "time_period", "changes"]
+    delta: List[EnergyQuantity]
+    __properties: ClassVar[List[str]] = ["usage_level_tag", "time_period", "delta"]
 
     model_config = ConfigDict(
         populate_by_name=True,
@@ -71,13 +71,13 @@ class EnergyTradeoff(BaseModel):
             exclude=excluded_fields,
             exclude_none=True,
         )
-        # override the default output from pydantic by calling `to_dict()` of each item in changes (list)
+        # override the default output from pydantic by calling `to_dict()` of each item in delta (list)
         _items = []
-        if self.changes:
-            for _item_changes in self.changes:
-                if _item_changes:
-                    _items.append(_item_changes.to_dict())
-            _dict['changes'] = _items
+        if self.delta:
+            for _item_delta in self.delta:
+                if _item_delta:
+                    _items.append(_item_delta.to_dict())
+            _dict['delta'] = _items
         return _dict
 
     @classmethod
@@ -92,7 +92,7 @@ class EnergyTradeoff(BaseModel):
         _obj = cls.model_validate({
             "usage_level_tag": obj.get("usage_level_tag"),
             "time_period": obj.get("time_period") if obj.get("time_period") is not None else 'annual',
-            "changes": [EnergyQuantity.from_dict(_item) for _item in obj["changes"]] if obj.get("changes") is not None else None
+            "delta": [EnergyQuantity.from_dict(_item) for _item in obj["delta"]] if obj.get("delta") is not None else None
         })
         return _obj
 

@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**range_upgrade_range_upgrade_v1_get**](RangeUpgradeApi.md#range_upgrade_range_upgrade_v1_get) | **GET** /range_upgrade/v1/ | Range Upgrade
+[**range_upgrade**](RangeUpgradeApi.md#range_upgrade) | **GET** /app/v1/range_upgrade/ | Range Upgrade
 
 
-# **range_upgrade_range_upgrade_v1_get**
-> List[EnergyTradeoff] range_upgrade_range_upgrade_v1_get(current_fuel, occupants)
+# **range_upgrade**
+> List[EnergyTradeoff] range_upgrade(current_fuel, occupants)
 
 Range Upgrade
 
@@ -40,11 +40,11 @@ with electrificationutils.ApiClient(configuration) as api_client:
 
     try:
         # Range Upgrade
-        api_response = api_instance.range_upgrade_range_upgrade_v1_get(current_fuel, occupants)
-        print("The response of RangeUpgradeApi->range_upgrade_range_upgrade_v1_get:\n")
+        api_response = api_instance.range_upgrade(current_fuel, occupants)
+        print("The response of RangeUpgradeApi->range_upgrade:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling RangeUpgradeApi->range_upgrade_range_upgrade_v1_get: %s\n" % e)
+        print("Exception when calling RangeUpgradeApi->range_upgrade: %s\n" % e)
 ```
 
 

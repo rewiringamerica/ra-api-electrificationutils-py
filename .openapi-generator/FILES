@@ -1,7 +1,6 @@
 .github/workflows/python.yml
 .gitignore
 .gitlab-ci.yml
-.openapi-generator-ignore
 .travis.yml
 README.md
 docs/EnergyQuantity.md
@@ -9,7 +8,7 @@ docs/EnergyTradeoff.md
 docs/GGRFHVACUpdateApi.md
 docs/GroupBy.md
 docs/HTTPValidationError.md
-docs/HealthDataApi.md
+docs/HealthImpactsApi.md
 docs/HvacEfficiencyElectricDetailed.md
 docs/HvacEfficiencyFossilFuels.md
 docs/HvacUpdateResults.md
@@ -22,7 +21,7 @@ docs/ValidationErrorLocInner.md
 electrificationutils/__init__.py
 electrificationutils/api/__init__.py
 electrificationutils/api/ggrfhvac_update_api.py
-electrificationutils/api/health_data_api.py
+electrificationutils/api/health_impacts_api.py
 electrificationutils/api/range_upgrade_api.py
 electrificationutils/api_client.py
 electrificationutils/api_response.py
@@ -50,19 +49,4 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_energy_quantity.py
-test/test_energy_tradeoff.py
-test/test_ggrfhvac_update_api.py
-test/test_group_by.py
-test/test_health_data_api.py
-test/test_http_validation_error.py
-test/test_hvac_efficiency_electric_detailed.py
-test/test_hvac_efficiency_fossil_fuels.py
-test/test_hvac_update_results.py
-test/test_metrics.py
-test/test_range_fuel_type.py
-test/test_range_upgrade_api.py
-test/test_upgrade_option.py
-test/test_validation_error.py
-test/test_validation_error_loc_inner.py
 tox.ini

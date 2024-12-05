@@ -26,10 +26,10 @@ class UpgradeOption(str, Enum):
     """
     allowed enum values
     """
-    HEAT_PUMP_DRYER = 'heat_pump_dryer'
-    MEDIUM_EFFICIENCY_HEAT_PUMP_BASIC_INSULATION = 'medium_efficiency_heat_pump_basic_insulation'
-    HEAT_PUMP_WATER_HEATER = 'heat_pump_water_heater'
-    MEDIUM_EFFICIENCY_HEAT_PUMP = 'medium_efficiency_heat_pump'
+    HP_DRYER = 'hp_dryer'
+    MED_EFF_HP_HERS_SIZING_NO_SETBACK_BASIC_ENCLOSURE = 'med_eff_hp_hers_sizing_no_setback_basic_enclosure'
+    HP_WATER_HEATER = 'hp_water_heater'
+    MED_EFF_HP_HERS_SIZING_NO_SETBACK = 'med_eff_hp_hers_sizing_no_setback'
     ELECTRIC_RESISTANCE_DRYER = 'electric_resistance_dryer'
 
     @classmethod

@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ggrf_hvac_upgrade_btu_per_watt_hour_ggrf_hvac_upgrade_btu_per_watt_hour_v1_get**](GGRFHVACUpdateApi.md#ggrf_hvac_upgrade_btu_per_watt_hour_ggrf_hvac_upgrade_btu_per_watt_hour_v1_get) | **GET** /ggrf/hvac_upgrade/btu_per_watt_hour/v1/ | Ggrf Hvac Upgrade Btu Per Watt Hour
-[**ggrf_hvac_upgrade_electric_to_electric_ggrf_hvac_upgrade_electric_to_electric_v1_get**](GGRFHVACUpdateApi.md#ggrf_hvac_upgrade_electric_to_electric_ggrf_hvac_upgrade_electric_to_electric_v1_get) | **GET** /ggrf/hvac_upgrade/electric-to-electric/v1/ | Ggrf Hvac Upgrade Electric To Electric
-[**ggrf_hvac_upgrade_fossil_to_electric_ggrf_hvac_upgrade_fossil_to_electric_v1_get**](GGRFHVACUpdateApi.md#ggrf_hvac_upgrade_fossil_to_electric_ggrf_hvac_upgrade_fossil_to_electric_v1_get) | **GET** /ggrf/hvac_upgrade/fossil-to-electric/v1/ | Ggrf Hvac Upgrade Fossil To Electric
+[**ggrf_hvac_upgrade_btu_per_watt_hour**](GGRFHVACUpdateApi.md#ggrf_hvac_upgrade_btu_per_watt_hour) | **GET** /app/v1/ggrf/hvac_upgrade/btu_per_watt_hour/ | Ggrf Hvac Upgrade Btu Per Watt Hour
+[**ggrf_hvac_upgrade_electric_to_electric**](GGRFHVACUpdateApi.md#ggrf_hvac_upgrade_electric_to_electric) | **GET** /app/v1/ggrf/hvac_upgrade/electric_to_electric/ | Ggrf Hvac Upgrade Electric To Electric
+[**ggrf_hvac_upgrade_fossil_to_electric**](GGRFHVACUpdateApi.md#ggrf_hvac_upgrade_fossil_to_electric) | **GET** /app/v1/ggrf/hvac_upgrade/fossil_to_electric/ | Ggrf Hvac Upgrade Fossil To Electric
 
 
-# **ggrf_hvac_upgrade_btu_per_watt_hour_ggrf_hvac_upgrade_btu_per_watt_hour_v1_get**
-> float ggrf_hvac_upgrade_btu_per_watt_hour_ggrf_hvac_upgrade_btu_per_watt_hour_v1_get(electric_efficiency)
+# **ggrf_hvac_upgrade_btu_per_watt_hour**
+> float ggrf_hvac_upgrade_btu_per_watt_hour(electric_efficiency)
 
 Ggrf Hvac Upgrade Btu Per Watt Hour
 
@@ -40,11 +40,11 @@ with electrificationutils.ApiClient(configuration) as api_client:
 
     try:
         # Ggrf Hvac Upgrade Btu Per Watt Hour
-        api_response = api_instance.ggrf_hvac_upgrade_btu_per_watt_hour_ggrf_hvac_upgrade_btu_per_watt_hour_v1_get(electric_efficiency)
-        print("The response of GGRFHVACUpdateApi->ggrf_hvac_upgrade_btu_per_watt_hour_ggrf_hvac_upgrade_btu_per_watt_hour_v1_get:\n")
+        api_response = api_instance.ggrf_hvac_upgrade_btu_per_watt_hour(electric_efficiency)
+        print("The response of GGRFHVACUpdateApi->ggrf_hvac_upgrade_btu_per_watt_hour:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling GGRFHVACUpdateApi->ggrf_hvac_upgrade_btu_per_watt_hour_ggrf_hvac_upgrade_btu_per_watt_hour_v1_get: %s\n" % e)
+        print("Exception when calling GGRFHVACUpdateApi->ggrf_hvac_upgrade_btu_per_watt_hour: %s\n" % e)
 ```
 
 
@@ -78,8 +78,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **ggrf_hvac_upgrade_electric_to_electric_ggrf_hvac_upgrade_electric_to_electric_v1_get**
-> object ggrf_hvac_upgrade_electric_to_electric_ggrf_hvac_upgrade_electric_to_electric_v1_get(location_zip_code, new_unit_efficiency_percent, existing_efficiency_btu_per_watt_hour, annual_hvac_usage_kwh)
+# **ggrf_hvac_upgrade_electric_to_electric**
+> object ggrf_hvac_upgrade_electric_to_electric(location_zip_code, new_unit_efficiency_percent, existing_efficiency_btu_per_watt_hour, annual_hvac_usage_kwh)
 
 Ggrf Hvac Upgrade Electric To Electric
 
@@ -111,11 +111,11 @@ with electrificationutils.ApiClient(configuration) as api_client:
 
     try:
         # Ggrf Hvac Upgrade Electric To Electric
-        api_response = api_instance.ggrf_hvac_upgrade_electric_to_electric_ggrf_hvac_upgrade_electric_to_electric_v1_get(location_zip_code, new_unit_efficiency_percent, existing_efficiency_btu_per_watt_hour, annual_hvac_usage_kwh)
-        print("The response of GGRFHVACUpdateApi->ggrf_hvac_upgrade_electric_to_electric_ggrf_hvac_upgrade_electric_to_electric_v1_get:\n")
+        api_response = api_instance.ggrf_hvac_upgrade_electric_to_electric(location_zip_code, new_unit_efficiency_percent, existing_efficiency_btu_per_watt_hour, annual_hvac_usage_kwh)
+        print("The response of GGRFHVACUpdateApi->ggrf_hvac_upgrade_electric_to_electric:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling GGRFHVACUpdateApi->ggrf_hvac_upgrade_electric_to_electric_ggrf_hvac_upgrade_electric_to_electric_v1_get: %s\n" % e)
+        print("Exception when calling GGRFHVACUpdateApi->ggrf_hvac_upgrade_electric_to_electric: %s\n" % e)
 ```
 
 
@@ -152,8 +152,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **ggrf_hvac_upgrade_fossil_to_electric_ggrf_hvac_upgrade_fossil_to_electric_v1_get**
-> HvacUpdateResults ggrf_hvac_upgrade_fossil_to_electric_ggrf_hvac_upgrade_fossil_to_electric_v1_get(location_zip_code, existing_unit_efficiency_standard, new_unit_efficiency_percent, existing_efficiency_btu_per_watt_hour, existing_consumption_gallons_per_year=existing_consumption_gallons_per_year, existing_consumption_cubic_feet_per_year=existing_consumption_cubic_feet_per_year)
+# **ggrf_hvac_upgrade_fossil_to_electric**
+> HvacUpdateResults ggrf_hvac_upgrade_fossil_to_electric(location_zip_code, existing_unit_efficiency_standard, new_unit_efficiency_percent, existing_efficiency_btu_per_watt_hour, existing_consumption_gallons_per_year=existing_consumption_gallons_per_year, existing_consumption_cubic_feet_per_year=existing_consumption_cubic_feet_per_year)
 
 Ggrf Hvac Upgrade Fossil To Electric
 
@@ -189,11 +189,11 @@ with electrificationutils.ApiClient(configuration) as api_client:
 
     try:
         # Ggrf Hvac Upgrade Fossil To Electric
-        api_response = api_instance.ggrf_hvac_upgrade_fossil_to_electric_ggrf_hvac_upgrade_fossil_to_electric_v1_get(location_zip_code, existing_unit_efficiency_standard, new_unit_efficiency_percent, existing_efficiency_btu_per_watt_hour, existing_consumption_gallons_per_year=existing_consumption_gallons_per_year, existing_consumption_cubic_feet_per_year=existing_consumption_cubic_feet_per_year)
-        print("The response of GGRFHVACUpdateApi->ggrf_hvac_upgrade_fossil_to_electric_ggrf_hvac_upgrade_fossil_to_electric_v1_get:\n")
+        api_response = api_instance.ggrf_hvac_upgrade_fossil_to_electric(location_zip_code, existing_unit_efficiency_standard, new_unit_efficiency_percent, existing_efficiency_btu_per_watt_hour, existing_consumption_gallons_per_year=existing_consumption_gallons_per_year, existing_consumption_cubic_feet_per_year=existing_consumption_cubic_feet_per_year)
+        print("The response of GGRFHVACUpdateApi->ggrf_hvac_upgrade_fossil_to_electric:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling GGRFHVACUpdateApi->ggrf_hvac_upgrade_fossil_to_electric_ggrf_hvac_upgrade_fossil_to_electric_v1_get: %s\n" % e)
+        print("Exception when calling GGRFHVACUpdateApi->ggrf_hvac_upgrade_fossil_to_electric: %s\n" % e)
 ```
 
 

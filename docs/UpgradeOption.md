@@ -4,13 +4,13 @@ Enum for valid electrification upgrade options.
 
 ## Enum
 
-* `HEAT_PUMP_DRYER` (value: `'heat_pump_dryer'`)
+* `HP_DRYER` (value: `'hp_dryer'`)
 
-* `MEDIUM_EFFICIENCY_HEAT_PUMP_BASIC_INSULATION` (value: `'medium_efficiency_heat_pump_basic_insulation'`)
+* `MED_EFF_HP_HERS_SIZING_NO_SETBACK_BASIC_ENCLOSURE` (value: `'med_eff_hp_hers_sizing_no_setback_basic_enclosure'`)
 
-* `HEAT_PUMP_WATER_HEATER` (value: `'heat_pump_water_heater'`)
+* `HP_WATER_HEATER` (value: `'hp_water_heater'`)
 
-* `MEDIUM_EFFICIENCY_HEAT_PUMP` (value: `'medium_efficiency_heat_pump'`)
+* `MED_EFF_HP_HERS_SIZING_NO_SETBACK` (value: `'med_eff_hp_hers_sizing_no_setback'`)
 
 * `ELECTRIC_RESISTANCE_DRYER` (value: `'electric_resistance_dryer'`)
 

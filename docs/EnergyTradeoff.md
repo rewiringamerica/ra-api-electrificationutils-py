@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **usage_level_tag** | **str** |  | 
 **time_period** | **str** |  | [optional] [default to 'annual']
-**changes** | [**List[EnergyQuantity]**](EnergyQuantity.md) |  | 
+**delta** | [**List[EnergyQuantity]**](EnergyQuantity.md) |  | 
 
 ## Example
 

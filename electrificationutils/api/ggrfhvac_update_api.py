@@ -41,7 +41,7 @@ class GGRFHVACUpdateApi:
 
 
     @validate_call
-    def ggrf_hvac_upgrade_btu_per_watt_hour_ggrf_hvac_upgrade_btu_per_watt_hour_v1_get(
+    def ggrf_hvac_upgrade_btu_per_watt_hour(
         self,
         electric_efficiency: HvacEfficiencyElectricDetailed,
         _request_timeout: Union[
@@ -85,7 +85,7 @@ class GGRFHVACUpdateApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._ggrf_hvac_upgrade_btu_per_watt_hour_ggrf_hvac_upgrade_btu_per_watt_hour_v1_get_serialize(
+        _param = self._ggrf_hvac_upgrade_btu_per_watt_hour_serialize(
             electric_efficiency=electric_efficiency,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -109,7 +109,7 @@ class GGRFHVACUpdateApi:
 
 
     @validate_call
-    def ggrf_hvac_upgrade_btu_per_watt_hour_ggrf_hvac_upgrade_btu_per_watt_hour_v1_get_with_http_info(
+    def ggrf_hvac_upgrade_btu_per_watt_hour_with_http_info(
         self,
         electric_efficiency: HvacEfficiencyElectricDetailed,
         _request_timeout: Union[
@@ -153,7 +153,7 @@ class GGRFHVACUpdateApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._ggrf_hvac_upgrade_btu_per_watt_hour_ggrf_hvac_upgrade_btu_per_watt_hour_v1_get_serialize(
+        _param = self._ggrf_hvac_upgrade_btu_per_watt_hour_serialize(
             electric_efficiency=electric_efficiency,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -177,7 +177,7 @@ class GGRFHVACUpdateApi:
 
 
     @validate_call
-    def ggrf_hvac_upgrade_btu_per_watt_hour_ggrf_hvac_upgrade_btu_per_watt_hour_v1_get_without_preload_content(
+    def ggrf_hvac_upgrade_btu_per_watt_hour_without_preload_content(
         self,
         electric_efficiency: HvacEfficiencyElectricDetailed,
         _request_timeout: Union[
@@ -221,7 +221,7 @@ class GGRFHVACUpdateApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._ggrf_hvac_upgrade_btu_per_watt_hour_ggrf_hvac_upgrade_btu_per_watt_hour_v1_get_serialize(
+        _param = self._ggrf_hvac_upgrade_btu_per_watt_hour_serialize(
             electric_efficiency=electric_efficiency,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -240,7 +240,7 @@ class GGRFHVACUpdateApi:
         return response_data.response
 
 
-    def _ggrf_hvac_upgrade_btu_per_watt_hour_ggrf_hvac_upgrade_btu_per_watt_hour_v1_get_serialize(
+    def _ggrf_hvac_upgrade_btu_per_watt_hour_serialize(
         self,
         electric_efficiency,
         _request_auth,
@@ -289,7 +289,7 @@ class GGRFHVACUpdateApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/ggrf/hvac_upgrade/btu_per_watt_hour/v1/',
+            resource_path='/app/v1/ggrf/hvac_upgrade/btu_per_watt_hour/',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -306,7 +306,7 @@ class GGRFHVACUpdateApi:
 
 
     @validate_call
-    def ggrf_hvac_upgrade_electric_to_electric_ggrf_hvac_upgrade_electric_to_electric_v1_get(
+    def ggrf_hvac_upgrade_electric_to_electric(
         self,
         location_zip_code: StrictStr,
         new_unit_efficiency_percent: Union[StrictFloat, StrictInt],
@@ -359,7 +359,7 @@ class GGRFHVACUpdateApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._ggrf_hvac_upgrade_electric_to_electric_ggrf_hvac_upgrade_electric_to_electric_v1_get_serialize(
+        _param = self._ggrf_hvac_upgrade_electric_to_electric_serialize(
             location_zip_code=location_zip_code,
             new_unit_efficiency_percent=new_unit_efficiency_percent,
             existing_efficiency_btu_per_watt_hour=existing_efficiency_btu_per_watt_hour,
@@ -386,7 +386,7 @@ class GGRFHVACUpdateApi:
 
 
     @validate_call
-    def ggrf_hvac_upgrade_electric_to_electric_ggrf_hvac_upgrade_electric_to_electric_v1_get_with_http_info(
+    def ggrf_hvac_upgrade_electric_to_electric_with_http_info(
         self,
         location_zip_code: StrictStr,
         new_unit_efficiency_percent: Union[StrictFloat, StrictInt],
@@ -439,7 +439,7 @@ class GGRFHVACUpdateApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._ggrf_hvac_upgrade_electric_to_electric_ggrf_hvac_upgrade_electric_to_electric_v1_get_serialize(
+        _param = self._ggrf_hvac_upgrade_electric_to_electric_serialize(
             location_zip_code=location_zip_code,
             new_unit_efficiency_percent=new_unit_efficiency_percent,
             existing_efficiency_btu_per_watt_hour=existing_efficiency_btu_per_watt_hour,
@@ -466,7 +466,7 @@ class GGRFHVACUpdateApi:
 
 
     @validate_call
-    def ggrf_hvac_upgrade_electric_to_electric_ggrf_hvac_upgrade_electric_to_electric_v1_get_without_preload_content(
+    def ggrf_hvac_upgrade_electric_to_electric_without_preload_content(
         self,
         location_zip_code: StrictStr,
         new_unit_efficiency_percent: Union[StrictFloat, StrictInt],
@@ -519,7 +519,7 @@ class GGRFHVACUpdateApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._ggrf_hvac_upgrade_electric_to_electric_ggrf_hvac_upgrade_electric_to_electric_v1_get_serialize(
+        _param = self._ggrf_hvac_upgrade_electric_to_electric_serialize(
             location_zip_code=location_zip_code,
             new_unit_efficiency_percent=new_unit_efficiency_percent,
             existing_efficiency_btu_per_watt_hour=existing_efficiency_btu_per_watt_hour,
@@ -541,7 +541,7 @@ class GGRFHVACUpdateApi:
         return response_data.response
 
 
-    def _ggrf_hvac_upgrade_electric_to_electric_ggrf_hvac_upgrade_electric_to_electric_v1_get_serialize(
+    def _ggrf_hvac_upgrade_electric_to_electric_serialize(
         self,
         location_zip_code,
         new_unit_efficiency_percent,
@@ -605,7 +605,7 @@ class GGRFHVACUpdateApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/ggrf/hvac_upgrade/electric-to-electric/v1/',
+            resource_path='/app/v1/ggrf/hvac_upgrade/electric_to_electric/',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -622,7 +622,7 @@ class GGRFHVACUpdateApi:
 
 
     @validate_call
-    def ggrf_hvac_upgrade_fossil_to_electric_ggrf_hvac_upgrade_fossil_to_electric_v1_get(
+    def ggrf_hvac_upgrade_fossil_to_electric(
         self,
         location_zip_code: StrictStr,
         existing_unit_efficiency_standard: HvacEfficiencyFossilFuels,
@@ -681,7 +681,7 @@ class GGRFHVACUpdateApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._ggrf_hvac_upgrade_fossil_to_electric_ggrf_hvac_upgrade_fossil_to_electric_v1_get_serialize(
+        _param = self._ggrf_hvac_upgrade_fossil_to_electric_serialize(
             location_zip_code=location_zip_code,
             existing_unit_efficiency_standard=existing_unit_efficiency_standard,
             new_unit_efficiency_percent=new_unit_efficiency_percent,
@@ -710,7 +710,7 @@ class GGRFHVACUpdateApi:
 
 
     @validate_call
-    def ggrf_hvac_upgrade_fossil_to_electric_ggrf_hvac_upgrade_fossil_to_electric_v1_get_with_http_info(
+    def ggrf_hvac_upgrade_fossil_to_electric_with_http_info(
         self,
         location_zip_code: StrictStr,
         existing_unit_efficiency_standard: HvacEfficiencyFossilFuels,
@@ -769,7 +769,7 @@ class GGRFHVACUpdateApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._ggrf_hvac_upgrade_fossil_to_electric_ggrf_hvac_upgrade_fossil_to_electric_v1_get_serialize(
+        _param = self._ggrf_hvac_upgrade_fossil_to_electric_serialize(
             location_zip_code=location_zip_code,
             existing_unit_efficiency_standard=existing_unit_efficiency_standard,
             new_unit_efficiency_percent=new_unit_efficiency_percent,
@@ -798,7 +798,7 @@ class GGRFHVACUpdateApi:
 
 
     @validate_call
-    def ggrf_hvac_upgrade_fossil_to_electric_ggrf_hvac_upgrade_fossil_to_electric_v1_get_without_preload_content(
+    def ggrf_hvac_upgrade_fossil_to_electric_without_preload_content(
         self,
         location_zip_code: StrictStr,
         existing_unit_efficiency_standard: HvacEfficiencyFossilFuels,
@@ -857,7 +857,7 @@ class GGRFHVACUpdateApi:
         :return: Returns the result object.
         """ # noqa: E501
 
-        _param = self._ggrf_hvac_upgrade_fossil_to_electric_ggrf_hvac_upgrade_fossil_to_electric_v1_get_serialize(
+        _param = self._ggrf_hvac_upgrade_fossil_to_electric_serialize(
             location_zip_code=location_zip_code,
             existing_unit_efficiency_standard=existing_unit_efficiency_standard,
             new_unit_efficiency_percent=new_unit_efficiency_percent,
@@ -881,7 +881,7 @@ class GGRFHVACUpdateApi:
         return response_data.response
 
 
-    def _ggrf_hvac_upgrade_fossil_to_electric_ggrf_hvac_upgrade_fossil_to_electric_v1_get_serialize(
+    def _ggrf_hvac_upgrade_fossil_to_electric_serialize(
         self,
         location_zip_code,
         existing_unit_efficiency_standard,
@@ -955,7 +955,7 @@ class GGRFHVACUpdateApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/ggrf/hvac_upgrade/fossil-to-electric/v1/',
+            resource_path='/app/v1/ggrf/hvac_upgrade/fossil_to_electric/',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,

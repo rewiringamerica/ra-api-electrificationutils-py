@@ -14,11 +14,11 @@
 """  # noqa: E501
 
 
-__version__ = "0.3.1"
+__version__ = "0.3.3"
 
 # import apis into sdk package
 from electrificationutils.api.ggrfhvac_update_api import GGRFHVACUpdateApi
-from electrificationutils.api.health_data_api import HealthDataApi
+from electrificationutils.api.health_impacts_api import HealthImpactsApi
 from electrificationutils.api.range_upgrade_api import RangeUpgradeApi
 
 # import ApiClient

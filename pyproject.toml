@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "electrificationutils"
-version = "0.3.1"
-description = "A collection of models providing insights on different components of household electrification."
+version = "0.3.3"
+description = "smallmodelsapi"
 authors = ["OpenAPI Generator Community <team@openapitools.org>"]
 license = "LICENSE.md"
 readme = "README.md"
-repository = "https://github.com/rewiringamerica/dml-small-models"
-keywords = ["OpenAPI", "OpenAPI-Generator", "electrification", "air quality", "health", "induction", "climate"]
+repository = "https://github.com/GIT_USER_ID/GIT_REPO_ID"
+keywords = ["OpenAPI", "OpenAPI-Generator", "smallmodelsapi"]
 include = ["electrificationutils/py.typed"]
 
 [tool.poetry.dependencies]
