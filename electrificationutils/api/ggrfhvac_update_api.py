@@ -289,7 +289,7 @@ class GGRFHVACUpdateApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/app/v1/ggrf/hvac_upgrade/btu_per_watt_hour/',
+            resource_path='/api/v1/ggrf/hvac_upgrade/btu_per_watt_hour/',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -605,7 +605,7 @@ class GGRFHVACUpdateApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/app/v1/ggrf/hvac_upgrade/electric_to_electric/',
+            resource_path='/api/v1/ggrf/hvac_upgrade/electric_to_electric/',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,
@@ -955,7 +955,7 @@ class GGRFHVACUpdateApi:
 
         return self.api_client.param_serialize(
             method='GET',
-            resource_path='/app/v1/ggrf/hvac_upgrade/fossil_to_electric/',
+            resource_path='/api/v1/ggrf/hvac_upgrade/fossil_to_electric/',
             path_params=_path_params,
             query_params=_query_params,
             header_params=_header_params,

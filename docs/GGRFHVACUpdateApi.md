@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ggrf_hvac_upgrade_btu_per_watt_hour**](GGRFHVACUpdateApi.md#ggrf_hvac_upgrade_btu_per_watt_hour) | **GET** /app/v1/ggrf/hvac_upgrade/btu_per_watt_hour/ | Ggrf Hvac Upgrade Btu Per Watt Hour
-[**ggrf_hvac_upgrade_electric_to_electric**](GGRFHVACUpdateApi.md#ggrf_hvac_upgrade_electric_to_electric) | **GET** /app/v1/ggrf/hvac_upgrade/electric_to_electric/ | Ggrf Hvac Upgrade Electric To Electric
-[**ggrf_hvac_upgrade_fossil_to_electric**](GGRFHVACUpdateApi.md#ggrf_hvac_upgrade_fossil_to_electric) | **GET** /app/v1/ggrf/hvac_upgrade/fossil_to_electric/ | Ggrf Hvac Upgrade Fossil To Electric
+[**ggrf_hvac_upgrade_btu_per_watt_hour**](GGRFHVACUpdateApi.md#ggrf_hvac_upgrade_btu_per_watt_hour) | **GET** /api/v1/ggrf/hvac_upgrade/btu_per_watt_hour/ | Ggrf Hvac Upgrade Btu Per Watt Hour
+[**ggrf_hvac_upgrade_electric_to_electric**](GGRFHVACUpdateApi.md#ggrf_hvac_upgrade_electric_to_electric) | **GET** /api/v1/ggrf/hvac_upgrade/electric_to_electric/ | Ggrf Hvac Upgrade Electric To Electric
+[**ggrf_hvac_upgrade_fossil_to_electric**](GGRFHVACUpdateApi.md#ggrf_hvac_upgrade_fossil_to_electric) | **GET** /api/v1/ggrf/hvac_upgrade/fossil_to_electric/ | Ggrf Hvac Upgrade Fossil To Electric
 
 
 # **ggrf_hvac_upgrade_btu_per_watt_hour**

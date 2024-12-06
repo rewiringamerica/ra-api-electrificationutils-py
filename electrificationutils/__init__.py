@@ -14,7 +14,7 @@
 """  # noqa: E501
 
 
-__version__ = "0.3.3"
+__version__ = "0.3.4"
 
 # import apis into sdk package
 from electrificationutils.api.ggrfhvac_update_api import GGRFHVACUpdateApi

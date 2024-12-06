@@ -1,9 +1,9 @@
 [tool.poetry]
 name = "electrificationutils"
-version = "0.3.3"
+version = "0.3.4"
 description = "smallmodelsapi"
 authors = ["OpenAPI Generator Community <team@openapitools.org>"]
-license = "LICENSE.md"
+license = "NoLicense"
 readme = "README.md"
 repository = "https://github.com/GIT_USER_ID/GIT_REPO_ID"
 keywords = ["OpenAPI", "OpenAPI-Generator", "smallmodelsapi"]

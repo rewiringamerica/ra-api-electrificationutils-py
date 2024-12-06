@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**range_upgrade**](RangeUpgradeApi.md#range_upgrade) | **GET** /app/v1/range_upgrade/ | Range Upgrade
+[**range_upgrade**](RangeUpgradeApi.md#range_upgrade) | **GET** /api/v1/range_upgrade/ | Range Upgrade
 
 
 # **range_upgrade**
